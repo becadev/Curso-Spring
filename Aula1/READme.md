@@ -46,3 +46,4 @@ arquivo json usado para testar a api no postman:
 "[email":"rebeecanoemi494@gmail.com](mailto:email%22:%22rebeecanoemi494@gmail.com)"
 }
 ```
+Link da aula: https://youtu.be/YY_hf0FOIcU?si=o_Po1LYkcb5zKU-Z
