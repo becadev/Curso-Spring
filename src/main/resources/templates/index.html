@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+<body>
+<!--    text = quero apenas mostrar a informação | value = vou enviar uma informação para o back-->
+    <h1 th:text="${titulo}">Título</h1>
+    <p th:text="${p}"> paragrafo</p>
+    <label>Nome:</label>
+    <input th:value="${nome}" type="text">
+<!--th:each funciona como um foreach do java, ele vai carregar itens la do array do java-->
+    <ul th:each="item : ${listaDeNomes}">
+        <li th:text="${item}"></li>
+    </ul>
+<!--Vai enviar o email para o java por meio do metodo post-->
+    <form action="/formulario" method="POST">
+<!--        para mandar a informação do input para o java, tem que colocar o name-->
+        <input type="email" class="form-control" id="formulario" placeholder="nome@example.com" name="email" th:value="${email}">
+        <button type="submit" >Salvar</button>
+    </form>
+</body>
+</html>
